@@ -1,6 +1,7 @@
+import { memo } from "react";
 import LatestProperty from "./latest-property";
 
-const LatestPropertiesOfRentCard = () => {
+const LatestPropertiesOfRentCard = memo(() => {
   return (
     <div className="self-stretch flex flex-col py-[86px] px-0 items-center justify-start gap-[39px] text-center text-21xl text-primary-800 font-body-large-400">
       <div className="self-stretch flex flex-col items-center justify-start gap-[40px] max-w-[95%px] md:pl-[60px] md:pr-[60px] md:box-border">
@@ -56,6 +57,6 @@ const LatestPropertiesOfRentCard = () => {
       </div>
     </div>
   );
-};
+});
 
 export default LatestPropertiesOfRentCard;

@@ -1,6 +1,7 @@
+import { memo } from "react";
 import PropertyArea from "./property-area";
 
-const PropertyAreas = () => {
+const PropertyAreas = memo(() => {
   return (
     <div className="self-stretch bg-primary-50 flex flex-col py-[70px] px-0 items-center justify-start text-center text-21xl text-primary-800 font-body-large-400">
       <div className="self-stretch flex flex-col pt-[75px] px-0 pb-0 box-border items-center justify-start gap-[54px] max-w-[95%px]">
@@ -38,6 +39,6 @@ const PropertyAreas = () => {
       </div>
     </div>
   );
-};
+});
 
 export default PropertyAreas;

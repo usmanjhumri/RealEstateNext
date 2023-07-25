@@ -1,6 +1,6 @@
-import { useMemo } from "react";
+import { memo, useMemo } from "react";
 
-const PropertyArea = ({ homeSaleRentId, homeSaleRentText, propWidth }) => {
+const PropertyArea = memo(({ homeSaleRentId, homeSaleRentText, propWidth }) => {
   const sellYourHomeStyle = useMemo(() => {
     return {
       width: propWidth,
@@ -32,6 +32,6 @@ const PropertyArea = ({ homeSaleRentId, homeSaleRentText, propWidth }) => {
       </div>
     </div>
   );
-};
+});
 
 export default PropertyArea;

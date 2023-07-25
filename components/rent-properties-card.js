@@ -1,6 +1,7 @@
+import { memo } from "react";
 import LatestPropertyRent from "./latest-property-rent";
 
-const RentPropertiesCard = () => {
+const RentPropertiesCard = memo(() => {
   return (
     <div className="self-stretch flex flex-col py-[86px] px-0 items-center justify-start gap-[39px] text-center text-21xl text-primary-800 font-body-large-400">
       <div className="self-stretch flex flex-col items-center justify-start gap-[40px] max-w-[95%px]">
@@ -28,6 +29,6 @@ const RentPropertiesCard = () => {
       </button>
     </div>
   );
-};
+});
 
 export default RentPropertiesCard;

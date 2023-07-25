@@ -7,21 +7,24 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        gray: "rgba(0, 0, 0, 0.5)",
+        darkslategray: "#434343",
+        slategray: "#576074",
+        "gray-400": "#889099",
+        "primary-800": "#1e2640",
+        "gray-white": "#fff",
+        whitesmoke: {
+          "100": "#eaeaea",
+          "200": "#e7e9eb",
+        },
+        gainsboro: "rgba(226, 226, 226, 0.1)",
+        "primary-700": "#2c3a61",
+        "primary-400": "#6e80b4",
         "gray-500": "#6d737a",
         "gray-black": "#1b1d1f",
         "primary-50": "#edeff6",
         "gray-700": "#363a3d",
         "primary-500": "#4a60a1",
-        gray: "rgba(0, 0, 0, 0.5)",
-        slategray: "#576074",
-        darkslategray: "#434343",
-        "gray-400": "#889099",
-        "primary-800": "#1e2640",
-        "gray-white": "#fff",
-        whitesmoke: "#eaeaea",
-        gainsboro: "rgba(226, 226, 226, 0.1)",
-        "primary-700": "#2c3a61",
-        "primary-400": "#6e80b4",
         "primary-900": "#0f1320",
       },
       fontFamily: {
@@ -33,6 +36,7 @@ module.exports = {
       borderRadius: {
         "3xs": "10px",
         "11xs-5": "1.5px",
+        "10xs": "3px",
       },
     },
     fontSize: {

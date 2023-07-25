@@ -1,4 +1,6 @@
-const ContactUs = () => {
+import { memo } from "react";
+
+const ContactUs = memo(() => {
   return (
     <div className="self-stretch bg-primary-50 flex flex-row flex-wrap py-[86px] px-[5px] items-start justify-center text-center text-21xl text-primary-800 font-body-large-400">
       <div className="flex-1 flex flex-col py-0 px-2.5 box-border items-center justify-start gap-[40px] max-w-[900px]">
@@ -61,6 +63,6 @@ const ContactUs = () => {
       </div>
     </div>
   );
-};
+});
 
 export default ContactUs;

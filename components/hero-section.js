@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { memo, useCallback } from "react";
 import "antd/dist/antd.min.css";
 import { Menu, Dropdown, Button } from "antd";
 import {
@@ -26,11 +26,14 @@ import {
   ShareAltOutlined,
   UserOutlined,
 } from "@ant-design/icons";
+import { useRouter } from "next/router";
 
-const HeroSection = () => {
+const HeroSection = memo(() => {
+  const router = useRouter();
+
   const onSearchCTAContainerClick = useCallback(() => {
-    // Please sync "Properties grid view" to the project
-  }, []);
+    router.push("/properties-grid-view");
+  }, [router]);
 
   return (
     <div className="self-stretch flex flex-col py-[120px] px-[30px] items-center justify-start bg-[url(/hero-section@3x.png)] bg-cover bg-no-repeat bg-[top] text-center text-33xl text-gray-white font-body-regular-400">
@@ -157,6 +160,6 @@ const HeroSection = () => {
       </div>
     </div>
   );
-};
+});
 
 export default HeroSection;

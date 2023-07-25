@@ -16,14 +16,21 @@ const LandingPage = () => {
         <meta name="description" content="Discover the Figma into nextjs" />
       </Head>
       <div className="relative bg-gray-white w-full flex flex-col items-center justify-start">
-        <Header />
+        <Header hamburger={false} />
         <HeroSection />
         <Home />
         <PropertyAreas />
         <LatestPropertiesOfRentCard />
         <RentPropertiesCard />
         <ContactUs />
-        <Footer />
+        <Footer
+          houseLine="/houseline1.svg"
+          socialMediaLogo="/social-media-logo.svg"
+          socialMediaLogo1="/social-media-logo1.svg"
+          socialMediaLogo2="/social-media-logo2.svg"
+          socialMediaLogo3="/social-media-logo3.svg"
+          socialMediaLogo4="/social-media-logo4.svg"
+        />
       </div>
     </>
   );

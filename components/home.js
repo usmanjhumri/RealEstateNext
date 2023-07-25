@@ -1,6 +1,7 @@
+import { memo } from "react";
 import PropertyCard from "./property-card";
 
-const Home = () => {
+const Home = memo(() => {
   return (
     <div className="self-stretch flex-1 flex flex-col py-[53px] px-[50px] items-center justify-start gap-[45px] text-center text-21xl text-primary-800 font-body-large-400">
       <div className="self-stretch flex flex-col py-0 px-[30px] items-center justify-start gap-[24px] md:self-stretch md:w-auto">
@@ -47,6 +48,6 @@ const Home = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Home;

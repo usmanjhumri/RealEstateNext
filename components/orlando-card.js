@@ -1,13 +1,22 @@
 import { memo } from "react";
 
-const LatestProperty = memo(
-  ({ propertyImage, car, bathtub, arrowsOut, shareNetwork, plus }) => {
+const OrlandoCard = memo(
+  ({
+    imageDimensions,
+    imageDimensionIds,
+    imageDimensionValues,
+    imageDimensionIdsAndValue,
+    imageDimensionIdsAndValue2,
+    imageDimensionIdsAndValue3,
+    imageDimensionIdsAndValue4,
+    imageDimensionIdsAndValue5,
+  }) => {
     return (
-      <div className="flex-1 rounded-3xs bg-gray-white box-border h-[466.99px] flex flex-col py-[15px] px-[13px] items-start justify-start gap-[23px] min-w-[355px] max-w-[400px] text-left text-[14.51px] text-gray-700 font-body-large-400 border-[1px] border-solid border-whitesmoke-100 hover:bg-gainsboro hover:cursor-pointer sm:w-[100%!important] sm:mb-5">
+      <div className="rounded-3xs bg-gray-white box-border w-[350px] h-[466.99px] flex flex-col py-[15px] px-[13px] items-start justify-start gap-[23px] text-left text-[14.51px] text-gray-700 font-body-large-400 border-[1px] border-solid border-whitesmoke-100 hover:bg-gainsboro hover:cursor-pointer sm:w-[100%!important] sm:mb-5">
         <img
           className="self-stretch relative rounded-3xs max-w-full overflow-hidden h-[200px] shrink-0 object-cover"
           alt=""
-          src={propertyImage}
+          src={imageDimensions}
         />
         <div className="self-stretch flex flex-row p-2.5 items-start justify-start">
           <div className="flex-1 relative leading-[20.32px] font-medium">
@@ -24,7 +33,7 @@ const LatestProperty = memo(
             <img
               className="relative w-[17.42px] h-[17.42px]"
               alt=""
-              src={car}
+              src={imageDimensionIds}
             />
             <div className="relative leading-[16.27px] font-medium">4</div>
           </div>
@@ -32,7 +41,7 @@ const LatestProperty = memo(
             <img
               className="relative w-[17.42px] h-[17.42px]"
               alt=""
-              src={bathtub}
+              src={imageDimensionValues}
             />
             <div className="relative leading-[16.27px] font-medium">4</div>
           </div>
@@ -40,7 +49,7 @@ const LatestProperty = memo(
             <img
               className="relative w-[17.42px] h-[17.42px]"
               alt=""
-              src={arrowsOut}
+              src={imageDimensionIdsAndValue}
             />
             <div className="relative leading-[16.27px] font-medium">
               2,096.00 ft
@@ -52,7 +61,7 @@ const LatestProperty = memo(
             <img
               className="relative rounded-[50%] w-[27.57px] h-[27.57px] object-cover"
               alt=""
-              src="/ellipse-1@2x.png"
+              src={imageDimensionIdsAndValue2}
             />
             <div className="relative leading-[17.42px] font-medium">
               Jenny Wilson
@@ -63,21 +72,21 @@ const LatestProperty = memo(
               <img
                 className="relative w-[14.51px] h-[14.51px]"
                 alt=""
-                src={shareNetwork}
+                src={imageDimensionIdsAndValue3}
               />
             </div>
             <div className="rounded-[1.45px] bg-primary-50 flex flex-row p-[2.902620315551758px] items-start justify-start">
               <img
                 className="relative w-[14.51px] h-[14.51px]"
                 alt=""
-                src="/heart.svg"
+                src={imageDimensionIdsAndValue4}
               />
             </div>
             <div className="rounded-[1.45px] bg-primary-50 flex flex-row p-[2.902620315551758px] items-start justify-start">
               <img
                 className="relative w-[14.51px] h-[14.51px]"
                 alt=""
-                src={plus}
+                src={imageDimensionIdsAndValue5}
               />
             </div>
           </div>
@@ -87,4 +96,4 @@ const LatestProperty = memo(
   }
 );
 
-export default LatestProperty;
+export default OrlandoCard;

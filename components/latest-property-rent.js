@@ -1,6 +1,6 @@
-import { useMemo } from "react";
+import { memo, useMemo } from "react";
 
-const LatestPropertyRent = ({ propBackgroundImage }) => {
+const LatestPropertyRent = memo(({ propBackgroundImage }) => {
   const card11Style = useMemo(() => {
     return {
       backgroundImage: propBackgroundImage,
@@ -24,6 +24,6 @@ const LatestPropertyRent = ({ propBackgroundImage }) => {
       </div>
     </div>
   );
-};
+});
 
 export default LatestPropertyRent;
