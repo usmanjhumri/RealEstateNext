@@ -1,45 +1,18 @@
-import Head from "next/head";
 import "antd/dist/antd.min.css";
 import { Menu, Dropdown, Button } from "antd";
-import {
-  DownOutlined,
-  ArrowLeftOutlined,
-  ArrowRightOutlined,
-  CalendarOutlined,
-  CheckOutlined,
-  ClockCircleOutlined,
-  CloseOutlined,
-  DeleteOutlined,
-  EditOutlined,
-  ExclamationCircleOutlined,
-  HeartOutlined,
-  LeftOutlined,
-  LockOutlined,
-  MailOutlined,
-  PaperClipOutlined,
-  PhoneOutlined,
-  QuestionCircleOutlined,
-  ReloadOutlined,
-  RightOutlined,
-  SearchOutlined,
-  SendOutlined,
-  ShareAltOutlined,
-  UserOutlined,
-} from "@ant-design/icons";
+import { DownOutlined } from "@ant-design/icons";
 import Header from "../components/header";
 import LocationCard from "../components/location-card";
 import Footer from "../components/footer";
 
 const PropertiesGridView = () => {
   return (
-    <div className="relative bg-gray-white w-full flex flex-col items-start justify-start text-center text-33xl text-gray-white font-body-regular-400">
+    <div className=" bg-gray-white w-full flex flex-col items-start justify-start text-center text-33xl text-gray-white font-body-regular-400">
       <Header hamburger={false} />
       <div className="self-stretch h-60 flex flex-col items-center justify-center bg-[url(/category@3x.png)] bg-cover bg-no-repeat bg-[top]">
         <div className="flex flex-col items-center justify-start gap-[12px]">
-          <div className="relative leading-[72px] font-semibold">
-            Properties
-          </div>
-          <div className="relative text-base leading-[24px] text-whitesmoke-200 font-body-large-400">
+          <div className=" leading-[72px] font-semibold">Properties</div>
+          <div className=" text-base leading-[24px] text-whitesmoke-200 font-body-large-400">
             <span>{`Home / `}</span>
             <span className="font-medium text-gray-white">Properties</span>
           </div>
@@ -49,10 +22,10 @@ const PropertiesGridView = () => {
         <div className="w-[272px] flex flex-row items-center justify-start">
           <div className="flex flex-row items-end justify-start gap-[16px]">
             <div className="flex flex-row items-start justify-start gap-[8px]">
-              <img className="relative w-6 h-6" alt="" src="/listbullets.svg" />
-              <img className="relative w-6 h-6" alt="" src="/squaresfour.svg" />
+              <img className=" w-6 h-6" alt="" src="/listbullets.svg" />
+              <img className=" w-6 h-6" alt="" src="/squaresfour.svg" />
             </div>
-            <div className="relative leading-[24px]">Sort by:</div>
+            <div className=" leading-[24px]">Sort by:</div>
             <Dropdown
               overlay={
                 <Menu>
@@ -82,35 +55,35 @@ const PropertiesGridView = () => {
         <LocationCard />
         <div className="flex flex-row items-end justify-center gap-[8px] text-center text-primary-500">
           <div className="rounded bg-primary-50 flex flex-row p-2.5 items-start justify-start">
-            <img className="relative w-6 h-6" alt="" src="/arrowleft.svg" />
+            <img className=" w-6 h-6" alt="" src="/arrowleft.svg" />
           </div>
           <div className="rounded-10xs bg-primary-500 flex flex-col py-2.5 px-[9px] items-start justify-start text-gray-white">
-            <div className="relative leading-[24px] font-semibold flex items-end justify-center w-[26px]">
+            <div className=" leading-[24px] font-semibold flex items-end justify-center w-[26px]">
               1
             </div>
           </div>
           <div className="rounded-10xs bg-primary-50 flex flex-col py-2.5 px-[9px] items-start justify-start">
-            <div className="relative leading-[24px] font-semibold flex items-end justify-center w-[26px]">
+            <div className=" leading-[24px] font-semibold flex items-end justify-center w-[26px]">
               2
             </div>
           </div>
           <div className="rounded-10xs bg-primary-50 flex flex-col py-2.5 px-[9px] items-start justify-start">
-            <div className="relative leading-[24px] font-semibold flex items-end justify-center w-[26px]">
+            <div className=" leading-[24px] font-semibold flex items-end justify-center w-[26px]">
               3
             </div>
           </div>
           <div className="rounded-10xs bg-primary-50 flex flex-col py-2.5 px-[9px] items-start justify-start">
-            <div className="relative leading-[24px] font-semibold flex items-end justify-center w-[26px]">
+            <div className=" leading-[24px] font-semibold flex items-end justify-center w-[26px]">
               ...
             </div>
           </div>
           <div className="rounded-10xs bg-primary-50 flex flex-col py-2.5 px-[9px] items-start justify-start">
-            <div className="relative leading-[24px] font-semibold flex items-end justify-center w-[26px]">
+            <div className=" leading-[24px] font-semibold flex items-end justify-center w-[26px]">
               54
             </div>
           </div>
           <div className="rounded bg-primary-500 flex flex-row p-2.5 items-start justify-start">
-            <img className="relative w-6 h-6" alt="" src="/arrowright.svg" />
+            <img className=" w-6 h-6" alt="" src="/arrowright.svg" />
           </div>
         </div>
       </div>
