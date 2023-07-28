@@ -8,7 +8,7 @@ const HeroSection = memo(() => {
   const router = useRouter();
 
   const onSearchCTAContainerClick = useCallback(() => {
-    router.push("/properties-grid-view");
+    router.push("/properties");
   }, [router]);
 
   return (
