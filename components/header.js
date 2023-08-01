@@ -19,28 +19,31 @@ const Header = memo(({ hamburger }) => {
         </Link>
         <div className="flex flex-row items-center justify-end gap-[36px] text-sm text-primary-900 md:flex sm:flex">
           <div className="flex flex-row items-start justify-start gap-[30px] md:hidden sm:hidden">
-            <Link href="/" className=" leading-[22px]">
+            <Link href="/" className=" leading-[22px] text-slategray">
               HOME
             </Link>
-            <Link href="#" className=" leading-[22px]">
+            <Link href="#" className=" leading-[22px] text-slategray">
               ABOUT US
             </Link>
-            <Link href="#" className=" leading-[22px]">
+            <Link href="#" className=" leading-[22px] text-slategray">
               OUR AGENTS
             </Link>
-            <Link href="/properties" className=" leading-[22px] font-semibold">
+            <Link
+              href="/properties"
+              className=" leading-[22px] font-semibold text-slategray"
+            >
               PROPERTIES
             </Link>
-            <Link href="#" className=" leading-[22px]">
+            <Link href="#" className=" leading-[22px] text-slategray">
               GALLERY
             </Link>
-            <Link href="#" className=" leading-[22px]">
+            <Link href="#" className=" leading-[22px] text-slategray">
               BLOG
             </Link>
-            <Link href="#" className=" leading-[22px]">
+            <Link href="#" className=" leading-[22px] text-slategray">
               CONTACT US
             </Link>
-            <Link href="#" className=" leading-[22px]">
+            <Link href="#" className=" leading-[22px] text-slategray">
               SEARCH
             </Link>
           </div>
