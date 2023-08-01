@@ -19,16 +19,30 @@ const Header = memo(({ hamburger }) => {
         </Link>
         <div className="flex flex-row items-center justify-end gap-[36px] text-sm text-primary-900 md:flex sm:flex">
           <div className="flex flex-row items-start justify-start gap-[30px] md:hidden sm:hidden">
-            <Link href="#" className=" leading-[22px]">
+            <Link href="/" className=" leading-[22px]">
               HOME
             </Link>
-            <div className=" leading-[22px]">ABOUT US</div>
-            <div className=" leading-[22px]">OUR AGENTS</div>
-            <div className=" leading-[22px] font-semibold">PROPERTIES</div>
-            <div className=" leading-[22px]">GALLERY</div>
-            <div className=" leading-[22px]">BLOG</div>
-            <div className=" leading-[22px]">CONTACT US</div>
-            <div className=" leading-[22px]">SEARCH</div>
+            <Link href="#" className=" leading-[22px]">
+              ABOUT US
+            </Link>
+            <Link href="#" className=" leading-[22px]">
+              OUR AGENTS
+            </Link>
+            <Link href="/properties" className=" leading-[22px] font-semibold">
+              PROPERTIES
+            </Link>
+            <Link href="#" className=" leading-[22px]">
+              GALLERY
+            </Link>
+            <Link href="#" className=" leading-[22px]">
+              BLOG
+            </Link>
+            <Link href="#" className=" leading-[22px]">
+              CONTACT US
+            </Link>
+            <Link href="#" className=" leading-[22px]">
+              SEARCH
+            </Link>
           </div>
           {!hamburger && (
             <button className="cursor-pointer [border:none] p-0 bg-[transparent] hidden flex-row items-center justify-center md:flex sm:flex sm:[transform:rotate(0deg)] sm:rounded-none">
