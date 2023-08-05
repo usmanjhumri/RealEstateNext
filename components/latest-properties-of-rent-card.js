@@ -1,5 +1,39 @@
 import { memo } from "react";
 import LatestProperty from "./latest-property";
+const cardsProperty = [
+  {
+    img: "/unsplashrlwe8f8anoc@2x.png",
+    car: "/car.svg",
+    bathtub: "/bathtub.svg",
+    arrowsOut: "/arrowsout.svg",
+    shareNetwork: "/sharenetwork.svg",
+    plus: "/plus.svg",
+  },
+  {
+    img: "/unsplashrlwe8f8anoc1@2x.png",
+    car: "/car.svg",
+    bathtub: "/bathtub.svg",
+    arrowsOut: "/arrowsout.svg",
+    shareNetwork: "/sharenetwork.svg",
+    plus: "/plus.svg",
+  },
+  {
+    img: "/unsplashrlwe8f8anoc2@2x.png",
+    car: "/car1.svg",
+    bathtub: "/bathtub1.svg",
+    arrowsOut: "/arrowsout.svg",
+    shareNetwork: "/sharenetwork.svg",
+    plus: "/plus.svg",
+  },
+  {
+    img: "/unsplashrlwe8f8anoc3@2x.png",
+    car: "/car1.svg",
+    bathtub: "/bathtub1.svg",
+    arrowsOut: "/arrowsout.svg",
+    shareNetwork: "/sharenetwork.svg",
+    plus: "/plus.svg",
+  },
+];
 
 const LatestPropertiesOfRentCard = memo(() => {
   return (
@@ -16,38 +50,20 @@ const LatestPropertiesOfRentCard = memo(() => {
           </div>
         </div>
         <div className="self-stretch flex flex-row flex-wrap py-0 px-2.5 items-center justify-center gap-[32px] text-left text-[14.51px] text-gray-700">
-          <LatestProperty
-            propertyImage="/unsplashrlwe8f8anoc@2x.png"
-            car="/car.svg"
-            bathtub="/bathtub.svg"
-            arrowsOut="/arrowsout.svg"
-            shareNetwork="/sharenetwork.svg"
-            plus="/plus.svg"
-          />
-          <LatestProperty
-            propertyImage="/unsplashrlwe8f8anoc1@2x.png"
-            car="/car.svg"
-            bathtub="/bathtub.svg"
-            arrowsOut="/arrowsout.svg"
-            shareNetwork="/sharenetwork.svg"
-            plus="/plus1.svg"
-          />
-          <LatestProperty
-            propertyImage="/unsplashrlwe8f8anoc2@2x.png"
-            car="/car1.svg"
-            bathtub="/bathtub1.svg"
-            arrowsOut="/arrowsout1.svg"
-            shareNetwork="/sharenetwork1.svg"
-            plus="/plus2.svg"
-          />
-          <LatestProperty
-            propertyImage="/unsplashrlwe8f8anoc3@2x.png"
-            car="/car1.svg"
-            bathtub="/bathtub1.svg"
-            arrowsOut="/arrowsout1.svg"
-            shareNetwork="/sharenetwork1.svg"
-            plus="/plus2.svg"
-          />
+          {cardsProperty.map((item, ind) => {
+            return (
+              <>
+                <LatestProperty
+                  propertyImage={item.img}
+                  car={item.car}
+                  bathtub={item.bathtub}
+                  arrowsOut={item.arrowsOut}
+                  shareNetwork={item.shareNetwork}
+                  plus={item.plus}
+                />
+              </>
+            );
+          })}
         </div>
       </div>
       <div className="rounded bg-primary-500 flex flex-row py-3 px-6 items-start justify-start text-base text-gray-white">
