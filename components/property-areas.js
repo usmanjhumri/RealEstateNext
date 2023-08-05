@@ -1,6 +1,25 @@
 import { memo } from "react";
 import PropertyArea from "./property-area";
 
+const cardArray = [
+  {
+    image: "/icon.svg",
+    text: "Sell your home",
+  },
+  {
+    image: "/icon1.svg",
+    text: "Rent your home",
+  },
+  {
+    image: "/icon2.svg",
+    text: "Buy a home",
+  },
+  {
+    image: "/icon3.svg",
+    text: "Free marketing",
+  },
+];
+
 const PropertyAreas = memo(() => {
   return (
     <div className="self-stretch bg-primary-50 flex flex-col py-[70px] px-0 items-center justify-start text-center text-21xl text-primary-800 font-body-large-400">
@@ -16,25 +35,16 @@ const PropertyAreas = memo(() => {
           </div>
         </div>
         <div className="self-stretch flex flex-row flex-wrap items-center justify-center gap-[86px] text-5xl text-gray-700">
-          <PropertyArea
-            homeSaleRentId="/icon.svg"
-            homeSaleRentText="Sell your home"
-          />
-          <PropertyArea
-            homeSaleRentId="/icon1.svg"
-            homeSaleRentText="Rent your home"
-            propWidth="312px"
-          />
-          <PropertyArea
-            homeSaleRentId="/icon2.svg"
-            homeSaleRentText="Buy a home"
-            propWidth="unset"
-          />
-          <PropertyArea
-            homeSaleRentId="/icon3.svg"
-            homeSaleRentText="Free marketing"
-            propWidth="312px"
-          />
+          {cardArray.map((item, ind) => {
+            return (
+              <>
+                <PropertyArea
+                  homeSaleRentId={item.image}
+                  homeSaleRentText={item.text}
+                />
+              </>
+            );
+          })}
         </div>
       </div>
     </div>

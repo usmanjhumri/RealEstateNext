@@ -1,5 +1,5 @@
 import "antd/dist/antd.min.css";
-import { Menu, Dropdown, Button } from "antd";
+import { Menu, Dropdown, Pagination } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import Header from "../components/header";
 import LocationCard from "../components/location-card";
@@ -53,7 +53,7 @@ const PropertiesGridView = () => {
           </div>
         </div>
         <LocationCard />
-        <div className="flex flex-row items-end justify-center gap-[8px] text-center text-primary-500">
+        {/* <div className="flex flex-row items-end justify-center gap-[8px] text-center text-primary-500">
           <div className="rounded bg-primary-50 flex flex-row p-2.5 items-start justify-start">
             <img className=" w-6 h-6" alt="" src="/arrowleft.svg" />
           </div>
@@ -85,7 +85,8 @@ const PropertiesGridView = () => {
           <div className="rounded bg-primary-500 flex flex-row p-2.5 items-start justify-start">
             <img className=" w-6 h-6" alt="" src="/arrowright.svg" />
           </div>
-        </div>
+        </div> */}
+        <Pagination defaultCurrent={1} total={50} />
       </div>
       <Footer
         houseLine="/houseline2.svg"
