@@ -13,7 +13,7 @@ const PropertyCard = memo(
 
     return (
       <Link
-        className="cursor-pointer [text-decoration:none] flex-1 rounded-lg h-[241px] flex flex-row items-start justify-start  bg-[url(/card-1@3x.png)] bg-cover bg-no-repeat bg-[top] text-left text-5xl text-gray-white font-body-large-400 md:flex-[unset] md:self-stretch"
+        className="cursor-pointer relative [text-decoration:none] flex-1 rounded-lg h-[241px] flex flex-row items-start justify-start  bg-[url(/card-1@3x.png)] bg-cover bg-no-repeat bg-[top] text-left text-5xl text-gray-white font-body-large-400 md:flex-[unset] md:self-stretch"
         href="/properties"
         style={card1Style}
       >
