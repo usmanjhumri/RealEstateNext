@@ -22,10 +22,10 @@ const Header = memo(({ hamburger }) => {
             <Link href="/" className=" leading-[22px] text-slategray">
               HOME
             </Link>
-            <Link href="#" className=" leading-[22px] text-slategray">
+            <Link href="about" className=" leading-[22px] text-slategray">
               ABOUT US
             </Link>
-            <Link href="#" className=" leading-[22px] text-slategray">
+            <Link href="agents" className=" leading-[22px] text-slategray">
               OUR AGENTS
             </Link>
             <Link
@@ -34,16 +34,16 @@ const Header = memo(({ hamburger }) => {
             >
               PROPERTIES
             </Link>
-            <Link href="#" className=" leading-[22px] text-slategray">
+            <Link href="gallery" className=" leading-[22px] text-slategray">
               GALLERY
             </Link>
-            <Link href="#" className=" leading-[22px] text-slategray">
+            <Link href="blog" className=" leading-[22px] text-slategray">
               BLOG
             </Link>
-            <Link href="#" className=" leading-[22px] text-slategray">
+            <Link href="contact-us" className=" leading-[22px] text-slategray">
               CONTACT US
             </Link>
-            <Link href="#" className=" leading-[22px] text-slategray">
+            <Link href="search" className=" leading-[22px] text-slategray">
               SEARCH
             </Link>
           </div>

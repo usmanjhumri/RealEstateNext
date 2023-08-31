@@ -11,7 +11,7 @@ const PropertiesGridView = () => {
       <Header hamburger={false} />
       <div className="self-stretch h-60 flex flex-col items-center justify-center bg-[url(/category@3x.png)] bg-cover bg-no-repeat bg-[top]">
         <div className="flex flex-col items-center justify-start gap-[12px]">
-          <div className=" leading-[72px] font-semibold">Propertiescd</div>
+          <div className=" leading-[72px] font-semibold">Properties</div>
           <div className=" text-base leading-[24px] text-whitesmoke-200 font-body-large-400">
             <span>{`Home / `}</span>
             <span className="font-medium text-gray-white">Properties</span>
