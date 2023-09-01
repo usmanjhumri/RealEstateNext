@@ -77,7 +77,7 @@ const Header = memo(({ hamburger }) => {
           >
             <h5
               id="drawer-navigation-label"
-              class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400"
+              class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400 text-left"
             >
               Menu
             </h5>
@@ -105,7 +105,7 @@ const Header = memo(({ hamburger }) => {
               <span class="sr-only">Close menu</span>
             </button>
             <div class="py-4 overflow-y-auto">
-              <ul class="space-y-2 font-medium">
+              <ul class="space-y-2 font-medium list-none">
                 <li>
                   <a
                     href="#"
