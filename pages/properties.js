@@ -1,5 +1,5 @@
 import "antd/dist/antd.min.css";
-import { Menu, Dropdown, Pagination } from "antd";
+import { Menu, Dropdown, Pagination, Drawer } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import Header from "../components/header";
 import LocationCard from "../components/location-card";
@@ -88,6 +88,7 @@ const PropertiesGridView = () => {
         </div> */}
         <Pagination defaultCurrent={1} total={50} />
       </div>
+
       <Footer
         houseLine="/houseline2.svg"
         socialMediaLogo="/social-media-logo5.svg"
