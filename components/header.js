@@ -85,7 +85,7 @@ const Header = memo(({ hamburger }) => {
           sidebaropen
             ? `fixed top-0 left-0 bottom-0  duration-700
     p-2 w-[300px] overflow-y-auto text-center bg-gray-900 shadow sm:hidden h-screen`
-            : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+            : "fixed left-[-100%] top-0 p-10 ease-in-out duration-500"
         }
       >
         <div className="text-gray-100 text-xl">
