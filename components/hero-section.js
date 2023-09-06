@@ -26,8 +26,10 @@ const HeroSection = memo(() => {
         </div>
         <div className="self-stretch flex flex-col items-center justify-start gap-[17px] text-base font-body-large-400">
           <div className="flex flex-row items-start justify-start gap-[10px]">
-            <div className="rounded bg-primary-500 overflow-hidden flex flex-row py-3 px-6 items-start justify-start">
-              <div className=" leading-[24px] font-medium">Rent</div>
+            <div>
+              <button className="leading-[24px] font-medium rounded bg-primary-500 overflow-hidden flex flex-row py-3 px-6 items-start justify-start">
+                Rent
+              </button>
             </div>
             <div className="rounded bg-gray-white overflow-hidden flex flex-row py-3 px-6 items-start justify-start text-primary-400">
               <div className=" leading-[24px] font-medium">Sale</div>
