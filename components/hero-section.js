@@ -31,9 +31,9 @@ const HeroSection = memo(() => {
                 Rent
               </button>
             </div>
-            <div className="rounded bg-gray-white overflow-hidden flex flex-row py-3 px-6 items-start justify-start text-primary-400">
-              <div className=" leading-[24px] font-medium">Sale</div>
-            </div>
+            <button className="cursor-pointer leading-[24px] font-medium rounded bg-gray-white overflow-hidden flex flex-row py-3 px-6 items-start justify-start text-primary-400">
+              Sale
+            </button>
           </div>
           <div className="self-stretch flex flex-row flex-wrap items-start justify-center text-primary-700">
             <div className="flex-1 rounded-lg bg-gray-white flex flex-row py-8 px-[62px] box-border items-center justify-between max-w-[1400px] md:w-[300px] md:flex-col md:gap-[20px] md:items-start md:justify-start md:ml-[auto] md:mr-[auto]">
