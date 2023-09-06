@@ -66,11 +66,10 @@ const LatestPropertiesOfRentCard = memo(() => {
           })}
         </div>
       </div>
-      <div className="rounded bg-primary-500 flex flex-row py-3 px-6 items-start justify-start text-base text-gray-white">
-        <div className="relative leading-[24px] font-medium">
-          Load more listing
-        </div>
-      </div>
+
+      <button className="cursor-pointer leading-[24px] font-medium rounded bg-primary-500 flex flex-row py-3 px-6 items-start justify-start text-base text-gray-white">
+        Load more listing
+      </button>
     </div>
   );
 });
