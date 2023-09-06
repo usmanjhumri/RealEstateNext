@@ -22,10 +22,8 @@ const RentPropertiesCard = memo(() => {
           <LatestPropertyRent propBackgroundImage={`url("/card-41@3x.png")`} />
         </div>
       </div>
-      <button className="cursor-pointer [border:none] py-3 px-6 bg-primary-500 rounded flex flex-row items-start justify-start">
-        <div className=" text-base leading-[24px] font-medium font-body-large-400 text-gray-white text-center">
-          Load more listing
-        </div>
+      <button className="cursor-pointer text-base leading-[24px] font-medium font-body-large-400 text-gray-white text-center [border:none] py-3 px-6 bg-primary-500 rounded flex flex-row items-start justify-start">
+        Load more listing
       </button>
     </div>
   );
