@@ -28,7 +28,7 @@ const Header = memo(({ hamburger }) => {
           </div>
         </Link>
         <div className="flex flex-row items-center justify-end gap-[36px] text-sm text-primary-900 md:flex sm:flex">
-          <div className="flex flex-row items-start justify-start gap-[30px] md:hidden sm:hidden">
+          <div className="flex flex-row items-start justify-start gap-[20px] md:hidden sm:hidden">
             <Link href="/" className=" leading-[22px] text-slategray">
               HOME
             </Link>
@@ -55,6 +55,12 @@ const Header = memo(({ hamburger }) => {
             </Link>
             <Link href="search" className=" leading-[22px] text-slategray">
               SEARCH
+            </Link>
+            <Link href="signup" className=" leading-[22px] text-slategray">
+              SignUp
+            </Link>
+            <Link href="login" className=" leading-[22px] text-slategray">
+              Login
             </Link>
           </div>
 

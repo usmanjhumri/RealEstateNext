@@ -57,36 +57,12 @@ const PropertiesGridView = () => {
           <div className="rounded bg-primary-50 flex flex-row p-2.5 items-start justify-start">
             <img className=" w-6 h-6" alt="" src="/arrowleft.svg" />
           </div>
-          <div className="rounded-10xs bg-primary-500 flex flex-col py-2.5 px-[9px] items-start justify-start text-gray-white">
-            <div className=" leading-[24px] font-semibold flex items-end justify-center w-[26px]">
-              1
-            </div>
-          </div>
-          <div className="rounded-10xs bg-primary-50 flex flex-col py-2.5 px-[9px] items-start justify-start">
-            <div className=" leading-[24px] font-semibold flex items-end justify-center w-[26px]">
-              2
-            </div>
-          </div>
-          <div className="rounded-10xs bg-primary-50 flex flex-col py-2.5 px-[9px] items-start justify-start">
-            <div className=" leading-[24px] font-semibold flex items-end justify-center w-[26px]">
-              3
-            </div>
-          </div>
-          <div className="rounded-10xs bg-primary-50 flex flex-col py-2.5 px-[9px] items-start justify-start">
-            <div className=" leading-[24px] font-semibold flex items-end justify-center w-[26px]">
-              ...
-            </div>
-          </div>
-          <div className="rounded-10xs bg-primary-50 flex flex-col py-2.5 px-[9px] items-start justify-start">
-            <div className=" leading-[24px] font-semibold flex items-end justify-center w-[26px]">
-              54
-            </div>
-          </div>
-          <div className="rounded bg-primary-500 flex flex-row p-2.5 items-start justify-start">
-            <img className=" w-6 h-6" alt="" src="/arrowright.svg" />
-          </div>
         </div> */}
-        <Pagination defaultCurrent={1} total={50} />
+        <Pagination
+          className="flex flex-row w-6 h-6 items-end justify-center gap-[8px] text-center text-primary-500 rounded  flex flex-row p-2.5 items-start justify-start"
+          defaultCurrent={1}
+          total={50}
+        />
       </div>
 
       <Footer
