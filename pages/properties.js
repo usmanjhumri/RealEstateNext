@@ -14,7 +14,9 @@ const PropertiesGridView = () => {
           <div className=" leading-[72px] font-semibold">Properties</div>
           <div className=" text-base leading-[24px] text-whitesmoke-200 font-body-large-400">
             <span>{`Home / `}</span>
-            <span className="font-medium text-gray-white">Properties</span>
+            <span className="font-medium text-gray-white">
+              Properties usman
+            </span>
           </div>
         </div>
       </div>
