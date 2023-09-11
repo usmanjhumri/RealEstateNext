@@ -1,6 +1,5 @@
 import { memo, useState } from "react";
 import Link from "next/link";
-import { Drawer } from "flowbite";
 
 const Header = memo(({ hamburger }) => {
   const [sidebaropen, setSidebaropen] = useState(false);
