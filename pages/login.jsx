@@ -1,11 +1,11 @@
 import React from 'react'
-import SingupForm from '../../components/SingupForm'
-import Header from '../../components/header'
-import Footer from '../../components/footer'
+import Header from '../components/header'
+import SingupForm from '../components/SingupForm'
+import Footer from '../components/footer'
 
-const Signup = () => {
+const login = () => {
     return (
-        <div>
+        <>
             <Header />
             <SingupForm />
             <h1>usman</h1>
@@ -18,8 +18,8 @@ const Signup = () => {
                 socialMediaLogo4="/social-media-logo9.svg"
                 footerSectionOverflow="hidden"
             />
-        </div>
+        </>
     )
 }
 
-export default Signup
+export default login
