@@ -1,16 +1,35 @@
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { ThreeDots } from 'react-loader-spinner'
 import { ToastContainer, toast } from 'react-toastify'
+import { useRouter } from 'next/navigation'
 const SingupForm = () => {
+
+    const Router = useRouter()
     const [loading, setLoading] = useState(false)
     const [buttonDisabled, setButtonDisabled] = useState(true)
+    const [user, setUser] = useState({
+        username: "",
+        email: "",
+        password: "",
+    })
+
+
 
 
     const handleRegistration = (e) => {
         e.preventDefault()
         setButtonDisabled(false)
     }
+    useEffect(() => {
+        if (
+            user.email.length > 0 && user.password.length > 0 && user.username.length > 0
+        ) {
+            setButtonDisabled(false)
+        } else {
+            setButtonDisabled(true)
+        }
+    }, [user])
     return (
         <div>
             <div className="w-[450px] sm:w-[500px] mx-auto bg-black px-10 py-16 rounded-md flex flex-col gap-y-6 border-[1px] border-primaryColor/30">
@@ -36,22 +55,22 @@ const SingupForm = () => {
                         label="Full Name"
                         placeholder="ex: John Doe"
                         inputType="text"
-                    //   value={user.username}
-                    //   onChange={(e) => setUser({ ...user, username: e.target.value })}
+                        value={user.username}
+                        onChange={(e) => setUser({ ...user, username: e.target.value })}
                     />
                     <input
                         label="Email"
                         placeholder="ex: john@anymail.com"
                         inputType="email"
-                    //   value={user.email}
-                    //   onChange={(e) => setUser({ ...user, email: e.target.value })}
+                        value={user.email}
+                        onChange={(e) => setUser({ ...user, email: e.target.value })}
                     />
                     <input
                         label="Password"
                         placeholder="- - - - - -"
                         inputType="password"
-                    //   value={user.password}
-                    //   onChange={(e) => setUser({ ...user, password: e.target.value })}
+                        value={user.password}
+                        onChange={(e) => setUser({ ...user, password: e.target.value })}
                     />
                 </div>
                 {buttonDisabled ? (
