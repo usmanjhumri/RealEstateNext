@@ -20,6 +20,8 @@ const SingupForm = () => {
     const handleRegistration = (e) => {
         e.preventDefault()
         setButtonDisabled(false)
+        toast.success('button succesfully clicked')
+        alert('button click huwa')
     }
     useEffect(() => {
         if (
