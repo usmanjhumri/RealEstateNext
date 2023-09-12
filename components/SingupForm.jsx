@@ -21,7 +21,7 @@ const SingupForm = () => {
         e.preventDefault()
         setButtonDisabled(false)
         toast.success('button succesfully')
-        alert('button click huwa')
+        // alert('button click huwa')
     }
     useEffect(() => {
         if (
@@ -99,7 +99,7 @@ const SingupForm = () => {
                     </Link>
                 </p>
                 <ToastContainer
-                    position="top-center"
+                    position="top-right"
                     autoClose={5000}
                     hideProgressBar={false}
                     newestOnTop={false}
@@ -108,7 +108,7 @@ const SingupForm = () => {
                     pauseOnFocusLoss
                     draggable
                     pauseOnHover
-                    theme="dark"
+                    theme="light"
                 />
             </div>
         </div>
