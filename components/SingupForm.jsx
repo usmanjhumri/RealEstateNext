@@ -89,6 +89,8 @@ const SingupForm = () => {
                     ) : (
                         <button
                             onClick={handleRegistration}
+                            className="w-full shadow-inner bg-gray-100 cursor-not-allowed rounded-lg   p-4 border-none block mt-1"
+
                         // className="w-full py-2 rounded-md mt-2 border-[1px] bg-zinc-950 text-primaryColor border-primaryColor hover:bg-zinc-800 duration-200"
                         >
                             Crate an Account
