@@ -69,6 +69,7 @@ const SingupForm = () => {
                             onChange={(e) => setUser({ ...user, email: e.target.value })}
                         />
                         <input
+                            className="w-full shadow-inner bg-gray-100 rounded-lg placeholder-black text-2xl p-4 border-none block mt-1 w-full"
                             label="Password"
                             placeholder="- - - - - -"
                             inputType="password"
@@ -79,7 +80,9 @@ const SingupForm = () => {
                     {buttonDisabled ? (
                         <button
                             onClick={(e) => e.preventDefault()}
-                            className="bg-zinc-900 w-full py-2 text-primaryColor/60 cursor-not-allowed rounded-md mt-2 duration-200"
+                            className="w-full shadow-inner bg-gray-100 cursor-not-allowed rounded-lg   p-4 border-none block mt-1"
+
+                        // className="bg-zinc-900 w-full py-2 text-primaryColor/60 cursor-not-allowed rounded-md mt-2 duration-200"
                         >
                             Fill the fields
                         </button>
