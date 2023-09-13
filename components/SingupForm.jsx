@@ -9,7 +9,7 @@ const SingupForm = () => {
     const [loading, setLoading] = useState(false)
     const [buttonDisabled, setButtonDisabled] = useState(true)
     const [user, setUser] = useState({
-        username: "",
+        fullname: "",
         email: "",
         password: "",
     })
@@ -120,13 +120,18 @@ const SingupForm = () => {
                             type="text"
                             class="block border border-grey-light w-full p-3 rounded mb-4"
                             name="fullname"
-                            placeholder="Full Name" />
+                            placeholder="Full Name"
+                            value={user.fullname}
+                            onChange={(e) => setUser({ ...user, fullname: e.target.value })}
+                        />
 
                         <input
                             type="text"
                             class="block border border-grey-light w-full p-3 rounded mb-4"
                             name="email"
                             placeholder="Email" />
+                        value={user.email}
+                        onChange={(e) => setUser({ ...user, email: e.target.value })}
 
                         <input
                             type="password"
