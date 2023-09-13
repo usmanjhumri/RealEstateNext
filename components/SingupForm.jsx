@@ -4,6 +4,24 @@ import { ThreeDots } from "react-loader-spinner";
 import { ToastContainer, toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 const SingupForm = () => {
+    const [writer, setWriter] = useState('')
+    const [textindex, setTextindex] = useState(0)
+    const typeWriter = ['Enter Your name', 'Please Enter your name', 'Enter your valid name']
+    const textWriter = typeWriter[textindex]
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            if (writer === textWriter) {
+                setTimeout(() => {
+                    setTextindex((textindex + 1) % typeWriter.length)
+                }, 100)
+            } else {
+                setWriter(textWriter.substring(0, writer.length + 1))
+            }
+        }, 100)
+        return () => clearInterval(interval)
+    }, [writer, textindex])
+
     const Router = useRouter();
     const [loading, setLoading] = useState(false);
     const [buttonDisabled, setButtonDisabled] = useState(true);
@@ -20,6 +38,7 @@ const SingupForm = () => {
         // alert('button click huwa')
     };
     useEffect(() => {
+
         if (
             user.email.length > 0 &&
             user.password.length > 0 &&
@@ -55,7 +74,7 @@ const SingupForm = () => {
                         <input
                             className="w-full shadow-inner bg-gray-100 rounded-lg placeholder-black text-2xl p-4 border-none block mt-1 w-full"
                             label="Full Name"
-                            placeholder="ex: John Doe"
+                            placeholder={writer}
                             inputType="text"
                             value={user.username}
                             onChange={(e) => setUser({ ...user, username: e.target.value })}
