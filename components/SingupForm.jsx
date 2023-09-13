@@ -1,38 +1,39 @@
-import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
-import { ThreeDots } from 'react-loader-spinner'
-import { ToastContainer, toast } from 'react-toastify'
-import { useRouter } from 'next/navigation'
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
+import { ThreeDots } from "react-loader-spinner";
+import { ToastContainer, toast } from "react-toastify";
+import { useRouter } from "next/navigation";
 const SingupForm = () => {
-
-    const Router = useRouter()
-    const [loading, setLoading] = useState(false)
-    const [buttonDisabled, setButtonDisabled] = useState(true)
+    const Router = useRouter();
+    const [loading, setLoading] = useState(false);
+    const [buttonDisabled, setButtonDisabled] = useState(true);
     const [user, setUser] = useState({
         username: "",
         email: "",
         password: "",
-    })
+    });
 
     const handleRegistration = (e) => {
-        e.preventDefault()
-        setButtonDisabled(false)
-        toast.success('button succesfully')
+        e.preventDefault();
+        setButtonDisabled(false);
+        toast.success("button succesfully");
         // alert('button click huwa')
-    }
+    };
     useEffect(() => {
         if (
-            user.email.length > 0 && user.password.length > 0 && user.username.length > 0
+            user.email.length > 0 &&
+            user.password.length > 0 &&
+            user.username.length > 0
         ) {
-            setButtonDisabled(false)
+            setButtonDisabled(false);
         } else {
-            setButtonDisabled(true)
+            setButtonDisabled(true);
         }
-    }, [user])
+    }, [user]);
     return (
         <>
             <div>
-                <div className="w-[450px] sm:w-[500px] mx-auto bg-black px-10 py-16 rounded-md flex flex-col gap-y-6 border-[1px] border-primaryColor/30">
+                <div className="w-[450px] sm:w-[500px] mx-auto  px-10 py-16 rounded-md flex flex-col gap-y-6 border-[1px] border-primaryColor/30">
                     <div className="flex items-center justify-between">
                         <div>
                             <p className="text-3xl font-semibold text-white">Sign up Form</p>
@@ -52,6 +53,7 @@ const SingupForm = () => {
                     </div>
                     <div className="flex flex-col gap-y-4">
                         <input
+                            className="w-full shadow-inner bg-gray-100 rounded-lg placeholder-black text-2xl p-4 border-none block mt-1 w-full"
                             label="Full Name"
                             placeholder="ex: John Doe"
                             inputType="text"
@@ -59,6 +61,7 @@ const SingupForm = () => {
                             onChange={(e) => setUser({ ...user, username: e.target.value })}
                         />
                         <input
+                            className="w-full shadow-inner bg-gray-100 rounded-lg placeholder-black text-2xl p-4 border-none block mt-1 w-full"
                             label="Email"
                             placeholder="ex: john@anymail.com"
                             inputType="email"
@@ -150,7 +153,7 @@ const SingupForm = () => {
                 </div>
             </section> */}
         </>
-    )
-}
+    );
+};
 
-export default SingupForm
+export default SingupForm;
