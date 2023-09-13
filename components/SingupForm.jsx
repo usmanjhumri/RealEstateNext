@@ -12,6 +12,7 @@ const SingupForm = () => {
         fullname: "",
         email: "",
         password: "",
+        confirm_password: "",
     })
 
     const handleRegistration = (e) => {
@@ -22,7 +23,7 @@ const SingupForm = () => {
     }
     useEffect(() => {
         if (
-            user.email.length > 0 && user.password.length > 0 && user.username.length > 0
+            user.email.length > 0 && user.password.length > 0 && user.confirm_password.length > 0 && user.fullname.length > 0
         ) {
             setButtonDisabled(false)
         } else {
@@ -32,7 +33,7 @@ const SingupForm = () => {
     return (
         <>
             <div>
-                <div className="w-[450px] sm:w-[500px] mx-auto bg-black px-10 py-16 rounded-md flex flex-col gap-y-6 border-[1px] border-primaryColor/30">
+                {/* <div className="w-[450px] sm:w-[500px] mx-auto bg-black px-10 py-16 rounded-md flex flex-col gap-y-6 border-[1px] border-primaryColor/30">
                     <div className="flex items-center justify-between">
                         <div>
                             <p className="text-3xl font-semibold text-white">Sign up Form</p>
@@ -108,7 +109,7 @@ const SingupForm = () => {
                         pauseOnHover
                         theme="light"
                     />
-                </div>
+                </div> */}
             </div>
 
             {/* <!-- component --> */}
@@ -129,9 +130,10 @@ const SingupForm = () => {
                             type="text"
                             class="block border border-grey-light w-full p-3 rounded mb-4"
                             name="email"
-                            placeholder="Email" />
-                        value={user.email}
-                        onChange={(e) => setUser({ ...user, email: e.target.value })}
+                            placeholder="Email" value={user.email}
+                            onChange={(e) => setUser({ ...user, email: e.target.value })}
+                        />
+
 
                         <input
                             type="password"
@@ -146,7 +148,10 @@ const SingupForm = () => {
                             type="password"
                             class="block border border-grey-light w-full p-3 rounded mb-4"
                             name="confirm_password"
-                            placeholder="Confirm Password" />
+                            placeholder="Confirm Password"
+                            value={user.confirm_password}
+                            onChange={(e) => setUser({ ...user, confirm_password: e.target.value })}
+                        />
 
                         {
                             buttonDisabled ? (
