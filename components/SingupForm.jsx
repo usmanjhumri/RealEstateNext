@@ -137,7 +137,11 @@ const SingupForm = () => {
                             type="password"
                             class="block border border-grey-light w-full p-3 rounded mb-4"
                             name="password"
-                            placeholder="Password" />
+                            placeholder="Password"
+                            value={user.password}
+                            onChange={(e) => setUser({ ...user, password: e.target.value })}
+
+                        />
                         <input
                             type="password"
                             class="block border border-grey-light w-full p-3 rounded mb-4"
