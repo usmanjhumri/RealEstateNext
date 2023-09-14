@@ -9,7 +9,7 @@ const login = () => {
         <>
             <Header />
             <LoginForm />
-            <h1>usman</h1>
+
             <Footer
                 houseLine="/houseline2.svg"
                 socialMediaLogo="/social-media-logo5.svg"
