@@ -6,7 +6,7 @@ const LoginForm = () => {
         password: ""
     })
     return (
-        <div>
+        <>
             <input
                 className="w-full shadow-inner bg-gray-100 rounded-lg placeholder-black text-2xl p-4 border-none block mt-1 w-full"
                 label="Email"
@@ -23,7 +23,7 @@ const LoginForm = () => {
                 value={user.password}
                 onChange={(e) => setUser({ ...user, password: e.target.value })}
             />
-        </div>
+        </>
     )
 }
 
