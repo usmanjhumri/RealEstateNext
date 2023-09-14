@@ -1,13 +1,13 @@
 import React from 'react'
 import Header from '../components/header'
-import SingupForm from '../components/SingupForm'
+
 import Footer from '../components/footer'
 
 const login = () => {
     return (
         <>
             <Header />
-            <SingupForm />
+
             <h1>usman</h1>
             <Footer
                 houseLine="/houseline2.svg"
