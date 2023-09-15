@@ -4,6 +4,7 @@ import { DownOutlined } from "@ant-design/icons";
 import Header from "../components/header";
 import LocationCard from "../components/location-card";
 import Footer from "../components/footer";
+import Link from "next/link";
 
 const PropertiesGridView = () => {
   return (
@@ -13,7 +14,16 @@ const PropertiesGridView = () => {
         <div className="flex flex-col items-center justify-start gap-[12px]">
           <div className=" leading-[72px] font-semibold">Properties</div>
           <div className=" text-base leading-[24px] text-whitesmoke-200 font-body-large-400">
-            <span>{`Home / `}</span>
+            <span>
+              {" "}
+              <Link
+                href="/"
+                className="text-base leading-[24px] text-whitesmoke-200 font-body-large-400"
+              >
+                {" "}
+                {`Home / `}
+              </Link>{" "}
+            </span>
             <span className="font-medium text-gray-white">
               Properties usman
             </span>
