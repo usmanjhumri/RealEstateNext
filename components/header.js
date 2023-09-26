@@ -161,20 +161,55 @@ const Header = memo(({ hamburger }) => {
                 </span>
               </div>
             </div>
-            <div
-              className=" leading-7 text-left text-sm font-thin mt-2 w-4/5 mx-auto"
-              id="submenu"
-            >
-              <h1 className="cursor-pointer p-2 hover:bg-gray-700 rounded-md mt-1">
-                Social
-              </h1>
-              <h1 className="cursor-pointer p-2 hover:bg-gray-700 rounded-md mt-1">
-                Personal
-              </h1>
-              <h1 className="cursor-pointer p-2 hover:bg-gray-700 rounded-md mt-1">
-                Friends
-              </h1>
+            <div className="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-blue-600">
+              <i className="bi bi-chat-left-text-fill" />
+              <div
+                className="flex justify-between w-full items-center"
+                onclick="dropDown()"
+              >
+                <span className="text-[15px] ml-4 text-gray-200">Chatbox</span>
+                <span className="text-sm rotate-180" id="arrow">
+                  <i className="bi bi-chevron-down" />
+                </span>
+              </div>
             </div>
+            <div className="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-blue-600">
+              <i className="bi bi-chat-left-text-fill" />
+              <div
+                className="flex justify-between w-full items-center"
+                onclick="dropDown()"
+              >
+                <span className="text-[15px] ml-4 text-gray-200">Chatbox</span>
+                <span className="text-sm rotate-180" id="arrow">
+                  <i className="bi bi-chevron-down" />
+                </span>
+              </div>
+            </div>
+            <div className="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-blue-600">
+              <i className="bi bi-chat-left-text-fill" />
+              <div
+                className="flex justify-between w-full items-center"
+                onclick="dropDown()"
+              >
+                <span className="text-[15px] ml-4 text-gray-200">Chatbox</span>
+                <span className="text-sm rotate-180" id="arrow">
+                  <i className="bi bi-chevron-down" />
+                </span>
+              </div>
+            </div>
+            <div className="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-blue-600">
+              <i className="bi bi-chat-left-text-fill" />
+              <div
+                className="flex justify-between w-full items-center"
+                onclick="dropDown()"
+              >
+                <span className="text-[15px] ml-4 text-gray-200">Chatbox</span>
+                <span className="text-sm rotate-180" id="arrow">
+                  <i className="bi bi-chevron-down" />
+                </span>
+              </div>
+            </div>
+
             <div className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-blue-600">
               <i className="bi bi-box-arrow-in-right" />
               <span className="text-[15px] ml-4 text-gray-200">Logout</span>
